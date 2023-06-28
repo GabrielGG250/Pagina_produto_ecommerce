@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="src/css/style.css">
   
   <title>E-commerce product page</title>
 
@@ -17,7 +19,17 @@
 <body>
 
   <header id="header">
-    <nav id="menu">
+    <section id="left-header">
+      <img id="icone-menu" src="images/icon-menu.svg" alt="icone do menu">
+      <img id="logo" src="images/logo.svg" alt="logo Sneakers">
+    </section>
+
+    <section id="right-header">
+      <img id="carrinho" src="images/icon-cart.svg" alt="icone carrinho de compras">
+      <img id="avatar" src="images/image-avatar.png" alt="avatar">
+    </section>
+
+    <nav id="menu" class="hide">
       <ul id="lista-menu">
         <li class="item-menu">Collections</li>
         <li class="item-menu">Men</li>
@@ -31,27 +43,44 @@
 
   <main id="main">
     <section id="conteiner-img">
+      <img class="img-produto" src="images/image-product-1.jpg" alt="imagem 1">
 
+      <div id="botoes-img">
+        <img class="botoes-img" src="images/icon-previous.svg" alt="botao proximo">
+        <img class="botoes-img" src="images/icon-next.svg" alt="botao voltar">
+      </div>
     </section>
 
-    <section id="info-produto">
-      <h2 id="nome-empresa">Sneaker Company</h2>
-      <h1 id="nome-produto">Fall Limited Edition Sneakers</h1>
-      <p id="descricao-produto">
-        These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they'll withstand everything the weather can offer.
-      </p>
-    </section>
+    <section id="conteiner-info">
+      <section id="info-produto">
+        <h2 id="nome-empresa">Sneaker Company</h2>
+        <h1 id="nome-produto">Fall Limited Edition Sneakers</h1>
+        <p id="descricao-produto">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+      </section>
 
-    <section id="valores">
-      <div id="valor-atual">$125.00</div>
-      <div id="desconto">50%</div>
-      <div id="valor-original">$250.00</div>
-    </section>
+      <section id="valores">
+        <div id="left-valores">
+          <div id="valor-atual">$125.00</div>
+          <div id="desconto">50%</div>
+        </div>
+        <div id="right-valores">
+          <div id="valor-original">$250.00</div>
+        </div>
+      </section>
 
-    <section id="add">
-      <div id="quantidade">0</div>
-      <buttom id="botao-add">Add to cart</buttom>
+      <section id="add">
+        <img id="menos" class="btn-mais-menos" src="images/icon-minus.svg" alt="menos">
+        <div id="quantidade">0</div>
+        <img id="mais" class="btn-mais-menos" src="images/icon-plus.svg" alt="mais">
+      </section>
+
+      <buttom id="botao-add">
+        <img id="cart" src="images/icon-cart.svg" alt="carrinho">
+        Add to cart
+      </buttom>
     </section>
   </main>
   
@@ -59,5 +88,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>
