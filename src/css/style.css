@@ -6,17 +6,27 @@
     list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 /* Variaveis */
 
 :root {
     --laranja: hsl(26, 100%, 55%);
     --laranja_palido: hsl(25, 100%, 94%);
+    --laranja_claro: hsl(25, 100%, 65%);
     --azul_escuro: hsl(220, 13%, 13%);
     --azul_acizentado_escuro: hsl(219, 9%, 45%);
     --azul_acizentado: hsl(220, 14%, 75%);
     --azul_claro_acizentado: hsl(223, 64%, 98%);
     --branco: hsl(0, 0%, 100%);
     /* --preto (with 75% opacity for lightbox background): hsl(0, 0%, 0%); */
+
+    --fonte: 'Kumbh Sans' , sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--fonte);
 }
 
 .hide {
@@ -30,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    width: 91.2vw;
+    width: 95vw;
     height: 65px;
 }
 
@@ -68,7 +78,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 96.2vw;
+    width: 100vw;
     height: 320px;
 }
 
@@ -76,7 +86,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 96.2vw;
+    width: 100vw;
     height: 320px;
 }
 
@@ -161,6 +171,12 @@
     color: rgb(117, 117, 117);
 }
 
+#sessao-add {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #add {
     display: flex;
     justify-content: space-between;
@@ -174,10 +190,16 @@
     width: 15px;
     height: 15px;
     padding: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--laranja);
 }
 
 .btn-mais-menos:hover {
     cursor: pointer;
+    color: var(--laranja_claro);
 }
 
 #menos {
@@ -193,4 +215,9 @@
     background-color: var(--laranja);
     border-radius: 10px;
     color: white;
+}
+
+#botao-add:hover {
+    background-color: var(--laranja_claro);
+    cursor: pointer;
 }

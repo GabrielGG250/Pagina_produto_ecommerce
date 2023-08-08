@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/mediaQuery.css">
   
   <title>E-commerce product page</title>
 
@@ -22,6 +23,15 @@
     <section id="left-header">
       <img id="icone-menu" src="images/icon-menu.svg" alt="icone do menu">
       <img id="logo" src="images/logo.svg" alt="logo Sneakers">
+      <nav id="menu" class="hide">
+        <ul id="lista-menu">
+          <li class="item-menu">Collections</li>
+          <li class="item-menu">Men</li>
+          <li class="item-menu">Women</li>
+          <li class="item-menu">About</li>
+          <li class="item-menu">Contact</li>
+        </ul>
+      </nav>
     </section>
 
     <section id="right-header">
@@ -29,15 +39,7 @@
       <img id="avatar" src="images/image-avatar.png" alt="avatar">
     </section>
 
-    <nav id="menu" class="hide">
-      <ul id="lista-menu">
-        <li class="item-menu">Collections</li>
-        <li class="item-menu">Men</li>
-        <li class="item-menu">Women</li>
-        <li class="item-menu">About</li>
-        <li class="item-menu">Contact</li>
-      </ul>
-    </nav>
+    
   </header>
   
 
@@ -49,12 +51,19 @@
         <img class="botoes-img" src="images/icon-previous.svg" alt="botao proximo">
         <img class="botoes-img" src="images/icon-next.svg" alt="botao voltar">
       </div>
+
+      <div id="carrosel-img" class="hide">
+        <img class="thumbnail-img" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" alt="">
+      </div>
     </section>
 
     <section id="conteiner-info">
       <section id="info-produto">
-        <h2 id="nome-empresa">Sneaker Company</h2>
-        <h1 id="nome-produto">Fall Limited Edition Sneakers</h1>
+        <h2 id="nome-empresa">SNEAKER COMPANY</h2>
+        <h1 id="nome-produto">Fall Limited Edition Sneakerst</h1>
         <p id="descricao-produto">
           These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they'll withstand everything the weather can offer.
@@ -63,24 +72,26 @@
 
       <section id="valores">
         <div id="left-valores">
-          <div id="valor-atual">$125.00</div>
-          <div id="desconto">50%</div>
+          <div id="valor-atual"><strong>$125.00</strong></div>
+          <div id="desconto"><strong>50%</strong></div>
         </div>
         <div id="right-valores">
-          <div id="valor-original">$250.00</div>
+          <div id="valor-original"><del>$250.00</del></div>
         </div>
       </section>
 
-      <section id="add">
-        <img id="menos" class="btn-mais-menos" src="images/icon-minus.svg" alt="menos">
-        <div id="quantidade">0</div>
-        <img id="mais" class="btn-mais-menos" src="images/icon-plus.svg" alt="mais">
-      </section>
+      <section id="sessao-add">
+        <section id="add">
+          <p id="menos" class="btn-mais-menos"><strong>-</strong></p>
+          <div id="quantidade">0</div>
+          <p id="menos" class="btn-mais-menos"><strong>+</strong></p>
+        </section>
 
-      <buttom id="botao-add">
-        <img id="cart" src="images/icon-cart.svg" alt="carrinho">
-        Add to cart
-      </buttom>
+        <buttom id="botao-add">
+          <img id="cart" src="images/icon-cart.svg" alt="carrinho">
+          <strong>Add to cart</strong>
+        </buttom>
+      </section>
     </section>
   </main>
   

@@ -1,0 +1,125 @@
+@media screen and (min-width: 600px){
+    #conteiner-img {
+        width: 80vw;
+        height: 380px;
+        align-self: center;
+    }
+    
+    .img-produto {
+        width: 80vw;
+        height: 380px;
+    }
+    
+    #botoes-img {
+        top: 145px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #header {
+        border-bottom: 1px solid rgba(164, 164, 164, 0.279);
+        margin: 0px 15px;
+    }
+
+    #icone-menu {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    #lista-menu {
+        display: flex;
+        gap: 35px;
+    }
+
+    .item-menu {
+        color: rgb(117, 117, 117);
+        padding: 33px 0px;
+        border-bottom: 3px solid white;
+        font-size: 1em;
+    }
+
+    .item-menu:hover {
+        cursor: pointer;
+        color: black;
+        border-bottom: 3px solid var(--laranja);
+    }
+
+    #left-header {
+        width: 500px;
+    }
+    
+    #main {
+        flex-direction: row;
+        gap: 30px;
+        padding: 0px 50px;
+        height: 80vh;
+    }
+
+    #conteiner-img {
+        width: 50vw;
+        height: 380px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-produto {
+        width: 320px;
+        height: 340px;
+        border-radius: 10px;
+    }
+    
+    #botoes-img {
+        display: none;
+    }
+
+    #carrosel-img {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        row-gap: 10px;
+        margin-top: 20px;
+        
+    }
+
+    .thumbnail-img {
+        width: 70px;
+        border-radius: 10px;
+    }
+
+    .thumbnail-img:hover {
+        cursor: pointer;
+    }
+
+    #conteiner-info {
+        width: 45vw;
+        justify-content: center;
+    }
+
+    #valores {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #sessao-add {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #add {
+        width: 40%;
+    }
+
+    #botao-add {
+        width: 60%;
+    }
+}
