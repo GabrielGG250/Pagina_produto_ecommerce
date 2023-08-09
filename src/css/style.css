@@ -68,8 +68,19 @@ body {
     width: 25px;
 }
 
+#carrinho:hover {
+    cursor: pointer;
+}
+
 #avatar {
     width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#avatar:hover {
+    cursor: pointer;
+    border: 2px solid var(--laranja);
 }
 
 /* Imagem */
