@@ -93,7 +93,7 @@ body {
     height: 320px;
 }
 
-.img-produto {
+#img-produto {
     position: relative;
     top: 0;
     left: 0;
@@ -214,7 +214,7 @@ body {
 }
 
 #menos {
-    height: 5px;
+    margin-bottom: 1px;
 }
 
 #botao-add {

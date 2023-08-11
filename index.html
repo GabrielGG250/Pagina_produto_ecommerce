@@ -22,7 +22,9 @@
   <header id="header">
     <section id="left-header">
       <img id="icone-menu" src="images/icon-menu.svg" alt="icone do menu">
+
       <img id="logo" src="images/logo.svg" alt="logo Sneakers">
+
       <nav id="menu" class="hide">
         <ul id="lista-menu">
           <li class="item-menu">Collections</li>
@@ -36,16 +38,15 @@
 
     <section id="right-header">
       <img id="carrinho" src="images/icon-cart.svg" alt="icone carrinho de compras">
+
       <img id="avatar" src="images/image-avatar.png" alt="avatar">
     </section>
-
-    
   </header>
   
 
   <main id="main">
     <section id="conteiner-img">
-      <img class="img-produto" src="images/image-product-1.jpg" alt="imagem 1">
+      <img id="img-produto" src="images/image-product-1.jpg" alt="imagem 1">
 
       <div id="botoes-img">
         <img class="botoes-img" src="images/icon-previous.svg" alt="botao proximo">
@@ -53,10 +54,22 @@
       </div>
 
       <div id="carrosel-img" class="hide">
-        <img class="thumbnail-img" src="images/image-product-1-thumbnail.jpg" alt="">
-        <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" alt="">
-        <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" alt="">
-        <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" alt="">
+        <div class="caixa-fotos">
+          <img class="thumbnail-img" src="images/image-product-1-thumbnail.jpg" alt="">
+          <div id="thumbUm" class="branco ativa"></div>
+        </div>
+        <div class="caixa-fotos">
+          <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" alt="">
+          <div id="thumbDois" class="branco"></div>
+        </div>
+        <div class="caixa-fotos">
+          <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" alt="">
+          <div id="thumbTres" class="branco"></div>
+        </div>
+        <div class="caixa-fotos">
+          <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" alt="">
+          <div id="thumbQuatro" class="branco"></div>
+        </div>
       </div>
     </section>
 
@@ -83,8 +96,8 @@
       <section id="sessao-add">
         <section id="add">
           <p id="menos" class="btn-mais-menos"><strong>-</strong></p>
-          <div id="quantidade">0</div>
-          <p id="menos" class="btn-mais-menos"><strong>+</strong></p>
+          <div id="quantidade">1</div>
+          <p id="mais" class="btn-mais-menos"><strong>+</strong></p>
         </section>
 
         <buttom id="botao-add">
@@ -97,7 +110,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Gabriel Guilherme</a>.
   </div>
 
   <script src="src/js/script.js"></script>

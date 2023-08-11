@@ -71,7 +71,7 @@
         align-items: center;
     }
     
-    .img-produto {
+    #img-produto {
         width: 320px;
         height: 340px;
         border-radius: 10px;
@@ -82,6 +82,7 @@
     }
 
     #carrosel-img {
+        position: relative;
         display: flex;
         justify-content: space-between;
         width: 320px;
@@ -97,6 +98,31 @@
 
     .thumbnail-img:hover {
         cursor: pointer;
+    }
+
+    .caixa-fotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .branco {
+        position: absolute;
+        top: 0;
+        width: 67px;
+        height: 67px;
+        border: 3px solid rgba(255, 255, 255, 0);
+        border-radius: 10px;
+    }
+
+    .branco:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.504);
+    }
+
+    .ativa {
+        border: 3px solid var(--laranja);
+        background-color: rgba(255, 255, 255, 0.504);
     }
 
     #conteiner-info {
