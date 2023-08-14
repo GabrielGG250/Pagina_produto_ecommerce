@@ -58,3 +58,47 @@ diminuir.addEventListener("click", function() {
         quantidade.innerHTML = numQuantidade
     }
 })
+
+// Mostrar e esconder carrinho
+
+const iconCarrinho = document.querySelector('#carrinho')
+const caixaCarrinho = document.querySelector('#caixa-carrinho')
+
+iconCarrinho.addEventListener("click", function() {
+    caixaCarrinho.classList.toggle('hide')
+})
+
+// Calculo valor da compra
+
+var valor = 0
+
+function valorCompra() {
+    valor = numQuantidade * 125
+    return valor
+}
+
+// Adicionar itens ao carrinho
+
+const addCart = document.querySelector('#botao-add')
+const cartVazio = document.querySelector('#carrinho-vazio')
+const cartCheio = document.querySelector('#carrinho-cheio')
+const quantProdCart = document.querySelector('#qntd-prod')
+const valorTot = document.querySelector('#valor-tot')
+
+addCart.addEventListener("click", function() {
+    cartVazio.classList.add('hide')
+    cartCheio.classList.remove('hide')
+    quantProdCart.innerHTML = `${numQuantidade}`
+    
+    valorTot.innerHTML = `${valorCompra()}`
+})
+
+// Remover itens do carrinho
+
+const lixeira = document.querySelector('#lixeira')
+
+lixeira.addEventListener("click", function() {
+    cartVazio.classList.remove('hide')
+    cartCheio.classList.add('hide')
+})
+
