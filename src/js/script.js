@@ -74,7 +74,7 @@ var valor = 0
 
 function valorCompra() {
     valor = numQuantidade * 125
-    return valor
+    return valor.toFixed(2).replace('.',',')
 }
 
 // Adicionar itens ao carrinho
@@ -84,6 +84,8 @@ const cartVazio = document.querySelector('#carrinho-vazio')
 const cartCheio = document.querySelector('#carrinho-cheio')
 const quantProdCart = document.querySelector('#qntd-prod')
 const valorTot = document.querySelector('#valor-tot')
+const notCart = document.querySelector('#not-hide')
+const qntdItensNot = document.querySelector('#qntd-itens')
 
 addCart.addEventListener("click", function() {
     cartVazio.classList.add('hide')
@@ -91,6 +93,9 @@ addCart.addEventListener("click", function() {
     quantProdCart.innerHTML = `${numQuantidade}`
     
     valorTot.innerHTML = `${valorCompra()}`
+
+    notCart.classList.remove('hide')
+    qntdItensNot.innerHTML = `${numQuantidade}`
 })
 
 // Remover itens do carrinho
@@ -100,5 +105,7 @@ const lixeira = document.querySelector('#lixeira')
 lixeira.addEventListener("click", function() {
     cartVazio.classList.remove('hide')
     cartCheio.classList.add('hide')
+
+    notCart.classList.add('hide')
 })
 

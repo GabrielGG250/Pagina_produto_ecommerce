@@ -64,6 +64,27 @@ body {
     width: 15px;
 }
 
+#caixa-icon-cart {
+    position: relative;
+    width: 25px;
+    height: 22px;
+}
+
+#not-qnt {
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    width: 20px;
+    height: 11px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--laranja);
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #carrinho {
     width: 25px;
     margin-right: 10px;
@@ -232,4 +253,8 @@ body {
 #botao-add:hover {
     background-color: var(--laranja_claro);
     cursor: pointer;
+}
+
+#cart {
+    width: 25px;
 }
