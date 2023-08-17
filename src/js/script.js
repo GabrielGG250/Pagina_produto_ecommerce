@@ -1,3 +1,17 @@
+// Menu mobile
+
+const menuMobile = document.querySelector('#menu-mobile')
+const iconMenu = document.querySelector('#icone-menu')
+const closeMenu = document.querySelector('#icon-close')
+
+iconMenu.addEventListener("click", function() {
+    menuMobile.classList.remove('hide')
+})
+
+closeMenu.addEventListener("click", function() {
+    menuMobile.classList.add('hide')
+})
+
 // Mudar imagem principal
 
 const thumbUm = document.querySelector("#thumbUm")
