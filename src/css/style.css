@@ -180,7 +180,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 223px;
+    width: 220px;
+    font-size: 0.95em;
+    margin-left: 10px;
 }
 
 #valor-strong {
@@ -211,7 +213,7 @@ body {
 }
 
 #checkout {
-    width: 315px;
+    width: 294px;
     height: 51px;
     border-radius: 10px;
     background-color: var(--laranja);
