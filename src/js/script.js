@@ -12,6 +12,41 @@ closeMenu.addEventListener("click", function() {
     menuMobile.classList.add('hide')
 })
 
+// Mudar imagem principal mobile
+
+const imgPrincipalMobile = document.querySelector('#img-produto')
+const btnAvancar = document.querySelector('#btn-avancar')
+const btnVoltar = document.querySelector('#btn-voltar')
+
+var img1 = 'images/image-product-1.jpg'
+var img2 = 'images/image-product-2.jpg'
+var img3 = 'images/image-product-3.jpg'
+var img4 = 'images/image-product-4.jpg'
+
+btnAvancar.addEventListener("click", function() {
+    if(imgPrincipalMobile.getAttribute('src') === img1) {
+        imgPrincipalMobile.setAttribute("src", img2)
+    } else if (imgPrincipalMobile.getAttribute('src') === img2) {
+        imgPrincipalMobile.setAttribute("src", img3)
+    } else if (imgPrincipalMobile.getAttribute('src') === img3) {
+        imgPrincipalMobile.setAttribute("src", img4)
+    } else if (imgPrincipalMobile.getAttribute('src') === img4) {
+        imgPrincipalMobile.setAttribute("src", img1)
+    } 
+})
+
+btnVoltar.addEventListener("click", function() {
+    if(imgPrincipalMobile.getAttribute('src') === img1) {
+        imgPrincipalMobile.setAttribute("src", img4)
+    } else if (imgPrincipalMobile.getAttribute('src') === img4) {
+        imgPrincipalMobile.setAttribute("src", img3)
+    } else if (imgPrincipalMobile.getAttribute('src') === img3) {
+        imgPrincipalMobile.setAttribute("src", img2)
+    } else if (imgPrincipalMobile.getAttribute('src') === img2) {
+        imgPrincipalMobile.setAttribute("src", img1)
+    } 
+})
+
 // Mudar imagem principal
 
 const thumbUm = document.querySelector("#thumbUm")
